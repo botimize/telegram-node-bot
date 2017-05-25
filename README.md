@@ -52,9 +52,9 @@ app.startPolling()
 ## Talk to your bot
 Run on the terminal
 
-Notice you have to replace <YOUR_BOT_TOKEN>, something like `123456789:AbCdfGhIJKlmNoQQRsTUVwxyZ`.
+Notice you have to replace YOUR_BOT_TOKEN, something like `123456789:AbCdfGhIJKlmNoQQRsTUVwxyZ`.
 ```
-BOT_TOKEN=<YOUR_BOT_TOKEN> node echoBot.js
+BOT_TOKEN=YOUR_BOT_TOKEN node echoBot.js
 ```
 Now you can talk to your bot!
 I name the bot as okokdodo you can find your bot with the bot name.
