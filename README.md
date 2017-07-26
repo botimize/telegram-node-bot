@@ -35,11 +35,13 @@ See your **YOUR_BOTIMIZE_TOKEN** by clicking Project Setting
 Create a Nodejs script (e.g. echoBot.js) and copy this into it. 
 Notice you have to replace YOUR_BOT_TOKEN, something like `123456789:AbCdfGhIJKlmNoQQRsTUVwxyZ`.
 And also, you have to replace YOUR_BOTIMIZE_TOKEN.
-```
+```js
 const Telegraf = require('telegraf')
 
 const app = new Telegraf(YOUR_BOT_TOKEN)
-const botimize = require('botimize')(YOUR_BOTIMIZE_TOKEN, "telegram");
+const botimize = require('botimize')(YOUR_BOTIMIZE_TOKEN, "telegram", {
+    apiUrl: 'https://api.getbotimize.com',
+});
 
 app.command('start', (ctx) => {
   	ctx.reply('Welcome!')
