@@ -1,9 +1,7 @@
 const Telegraf = require('telegraf')
 
 const app = new Telegraf(YOUR_BOT_TOKEN)
-const botimize = require('botimize')(YOUR_BOTIMIZE_TOKEN, "telegram", {
-    apiUrl: 'https://api.getbotimize.com',
-});
+const botimize = require('botimize')(YOUR_BOTIMIZE_TOKEN, "telegram")
 
 app.command('start', (ctx) => {
   	ctx.reply('Welcome!')
